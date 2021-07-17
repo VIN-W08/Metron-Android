@@ -2,6 +2,7 @@
 Capstone Project for Bangkit Program 2021 by **Google, Gojek, Tokopedia, and Traveloka**.
 
 # About Metron App</br>
+**Theme: Mobility and Smart City**</br>
 **Metron** is an Android application that is able to collect electricity and water usage data.
 This application was created for a purpose to help creating a balance public service 
 distribution and also cut off the ineffective procedures in public service delivery
