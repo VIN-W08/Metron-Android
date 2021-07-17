@@ -6,7 +6,8 @@ Capstone Project for Bangkit Program 2021 by **Google, Gojek, Tokopedia, and Tra
 This app is created in the purpose to help creating a balance public service 
 distribution & also cut off the ineffective procedures in public service delivery
 particularly the using of human resource from electriy or water provider company
-to go door by door to record the usage of its users.  
+to go door by door to record the usage of its users. This application was developed 
+by two person which is Vincent (me) and Stephen Thajeb (teammate).
 
 # Features of this app:
 - OCR to extract the usage from electricity/water usage
