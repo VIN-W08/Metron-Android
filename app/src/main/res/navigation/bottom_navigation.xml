@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:label="@string/home"
+        android:name="com.example.vin.metron.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_plnMainFragment"
+            app:destination="@id/plnMainFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_pdamMainFragment"
+            app:destination="@id/pdamMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_history"
+        android:label="@string/history"
+        android:name="com.example.vin.metron.history.HistoryFragment"
+        tools:layout="@layout/fragment_history"/>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:label="@string/profile"
+        android:name="com.example.vin.metron.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile"/>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.vin.metron.result.ResultFragment"
+        android:label="Hasil"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_plnMainFragment"
+            app:destination="@id/plnMainFragment" />
+        <action
+            android:id="@+id/action_resultFragment_to_pdamMainFragment"
+            app:destination="@id/pdamMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.example.vin.metron.info.InfoFragment"
+        android:label="Informasi"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/plnMainFragment"
+        android:name="com.example.vin.metron.home.menu.PlnMainFragment"
+        android:label="⚡ Lapor PLN"
+        tools:layout="@layout/fragment_pln_main">
+        <action
+            android:id="@+id/action_plnMainFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pdamMainFragment"
+        android:name="com.example.vin.metron.home.menu.PdamMainFragment"
+        android:label="💧 Lapor PDAM"
+        tools:layout="@layout/fragment_pdam_main" >
+        <action
+            android:id="@+id/action_pdamMainFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+
+
+</navigation>
